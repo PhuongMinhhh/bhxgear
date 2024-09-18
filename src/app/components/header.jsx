@@ -20,7 +20,7 @@ const header = () => {
                     <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Lịch Bảo Hành  </a>
                     </li>
                     <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Địa chỉ bảo hành  </a>
+                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/address"> Địa chỉ bảo hành  </a>
                     </li>
                     <li>
                     <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Hỗ trợ  </a>
