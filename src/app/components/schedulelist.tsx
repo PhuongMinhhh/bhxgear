@@ -8,19 +8,19 @@ const schedulelist = () => {
         <thead className=''>
             <tr className='bg-indigo-600 uppercase '>
                 <th className='px-10 py-2 '>
-                    <span className='text-gray-200'> STT  </span>
+                    <span className='text-white'> STT  </span>
                 </th>
                 <th className='px-10 py-2'>
-                    <span className='text-gray-200'> Ngày nhận  </span>
+                    <span className='text-white'> Ngày nhận  </span>
                 </th>
                 <th className='px-10 py-2'>
-                    <span className='text-gray-200'> Nhận  </span>
+                    <span className='text-white'> Loại  </span>
                 </th>
                 <th className='px-10 py-2'>
-                    <span className='text-gray-200'> Số phiếu  </span>
+                    <span className='text-white'> Số phiếu  </span>
                 </th>
                 <th className='px-10 py-2'>
-                    <span className='text-gray-200'> Action  </span>
+                    <span className='text-white'> Action  </span>
                 </th>
             </tr>
         </thead>
@@ -34,7 +34,7 @@ const schedulelist = () => {
                     <span >28/8/2024</span>
                 </td>
                 <td className='py-2'>
-                    <span className=' bg-green-500 rounded-full px-5 p-2 text-gray-200'>Khách lẻ</span>
+                    <span className=' bg-green-500 rounded-full px-5 p-2 text-white'>Khách lẻ</span>
                     
                 </td>
                 <td className='px-10 py-2'>
@@ -61,7 +61,7 @@ const schedulelist = () => {
                     <span >28/8/2024</span>
                 </td>
                 <td className='py-2'>
-                    <span className=' bg-green-500 rounded-full px-5 p-2 text-gray-200'>Khách lẻ</span>
+                    <span className=' bg-green-500 rounded-full px-5 p-2 text-white'>Khách lẻ</span>
                     
                 </td>
                 <td className='px-10 py-2'>

@@ -17,13 +17,16 @@ const header = () => {
                 <nav aria-label="Global">
                 <ul className="flex items-center gap-6 text-xl uppercase">
                     <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Lịch Bảo Hành  </a>
+                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/"> Lịch Bảo Hành  </a>
                     </li>
                     <li>
                     <a className="text-gray-500 transition hover:text-gray-500/75" href="/address"> Địa chỉ bảo hành  </a>
                     </li>
                     <li>
-                    <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Hỗ trợ  </a>
+                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/warranty"> Thông tin đi bảo hành  </a>
+                    </li>
+                    <li>
+                    <a className="text-gray-500 transition hover:text-gray-500/75" href="/support"> Hỗ trợ  </a>
                     </li>
                 </ul>
                 </nav>
