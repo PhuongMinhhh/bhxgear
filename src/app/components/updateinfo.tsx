@@ -2,6 +2,7 @@
 import React from 'react'
 import { useReducer } from 'react'
 import Success from '../components/Success'
+import { LiaSaveSolid } from "react-icons/lia";
 const formReducer = (state, event) => {
     return{
         ...state,
@@ -147,8 +148,8 @@ const updateInfo = () => {
                 </span>
             </label>
         </div>
-        <div className='flex justify-center mt-1'>
-        <button  className='w-full border-sm p-2 rounded-sm bg-indigo-600 text-white hover:bg-indigo-700 hover:text-gray-200'>Thêm </button>
+        <div className='flex justify-start mt-1'>
+        <button  className='w-1/2 flex justify-center  border-sm p-2 rounded-sm border border-current bg-indigo-600 text-white hover:bg-white  hover:text-indigo-700 hover:border-indigo-700'><span className='px-1'><LiaSaveSolid size={24}/></span></button>
         </div>
 
        

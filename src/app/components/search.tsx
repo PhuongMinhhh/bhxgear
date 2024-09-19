@@ -9,7 +9,7 @@ const SearchComponent = () => {
             type="text"
             id="Search"
             placeholder="Search for..."
-            className="w-full rounded-md  py-1.5 pe-10 shadow-sm shadow-indigo-600 sm:text-sm"
+            className="w-full rounded-md border border-collapse  py-1.5 pe-10 shadow-sm shadow-indigo-600 sm:text-sm"
         />
 
         <span className="absolute inset-y-0 end-0 grid w-10 place-content-center">
