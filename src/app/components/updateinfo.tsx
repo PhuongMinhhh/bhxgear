@@ -27,7 +27,7 @@ const updateInfo = () => {
       <form action="" className="grid lg:grid-cols-5 w-9/6 gap-5" onSubmit={handleSubmit} >
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input  onChange={setFormData} name='sophieu' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input  onChange={setFormData} name='name' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"

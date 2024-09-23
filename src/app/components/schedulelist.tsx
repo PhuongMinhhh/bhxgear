@@ -2,7 +2,12 @@ import React from 'react'
 import { MdEditNote } from "react-icons/md";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-const schedulelist = () => {
+
+
+const schedulelist=  (
+   
+) => {
+    
   return (
     <table className='min-w-full table-auto '>
         <thead className=''>
