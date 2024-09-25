@@ -1,8 +1,5 @@
-import { model, models, Schema } from "mongoose";
-
-
-
-const infoSchema = new Schema({
+import mongoose from "mongoose";
+const infoModel  = new mongoose.Schema({
         sophieu: {type: String, required: true, unique: true},   
         ngaynghan: {type: Date},
         loai: {type: String},
@@ -15,11 +12,5 @@ const infoSchema = new Schema({
         ngayve: {type: Date},
 
 
-}, {
-        timestamps: true,
-    
 });
-
-const Info = models?.Info || model("Info", infoSchema);
-
-export default Info;
+export const Info = mongoose.models.infos || mongoose.model('infos', infoModel)
