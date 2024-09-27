@@ -5,7 +5,7 @@ import Search from '../components/search'
 const page = () => {
   return (
     <>
-    
+    2w312
     </>
   )
 }

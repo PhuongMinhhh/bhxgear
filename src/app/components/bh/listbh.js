@@ -1,14 +1,19 @@
-import React from 'react'
-// fetch data from server
+"use client"
+import React, { useEffect, useState } from 'react';
 
-const getData = async()=>{
-    let data = await fetch('http://localhost:3000/api/data-infos')
-    data = await data.json()
-    return data;
-}
-const listbh
- = async() => {
-  const data = await getData();
+const listbh = () => {
+    const [data, setData] = useState(null);
+    useEffect(() => {
+      const fetchData = async () => {
+        const res = await fetch('http://localhost:3000/api/data-address');
+        const data = await res.json();
+        setData(data);
+      };
+  
+      fetchData();
+      
+    }, []);
+    
   return (
     <div className='mt-10'>
       <table className='min-w-full table-auto '>
@@ -41,21 +46,22 @@ const listbh
 
           ))
         } */}
-             <tr className='bg-gray-20 text-center border-b-2'>
+        {
+                        Array.isArray(data) && data.map((item, i) => {
+                          return(
+
+             <tr className='bg-gray-20 text-center border-b-2 '>
                 <td className='px-10 py-2  '>
-                    <span className='text-center ml-2  text-gray-700'>1</span>
+                    <span className='text-center ml-2  text-gray-700'>{i+1}</span>
                 </td>
                 <td className='px-10 py-2 text-gray-700'>
-                    <span >
-                    FPT SERVICE 
-                    </span>
+                    <span >{item.hang}</span>
                 </td>
                 <td className='py-2'>
-                    <span className='px-5 p-2 text-gray-700 '>RAZER GEAR, LAPTOP MSI</span>
-                    
+                    <span className='px-5 p-2 text-gray-700 uppercase '>{item.sanphamgui}</span>
                 </td>
-                <td className='px-10 py-2 text-gray-700'>
-                    <span>194/3 Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận, Hồ Chí Minh</span>
+                <td className='px-10 py-2 text-gray-700 text-start'>
+                    <span>{item.diachi}</span>
                 </td>
             
                     {/* <button>
@@ -72,7 +78,9 @@ const listbh
             
         
             
-             
+        ) 
+                        })
+                    }
         </tbody>
     </table>
     </div>

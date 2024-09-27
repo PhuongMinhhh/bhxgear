@@ -7,5 +7,5 @@ export const GET = async () => {
   const empData = await Info.find();
 
   // return NextResponse.json({result: "Success"})
-  return NextResponse.json({result: empData})
+  return NextResponse.json(empData)
 }

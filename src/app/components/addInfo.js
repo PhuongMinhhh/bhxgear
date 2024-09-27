@@ -25,7 +25,7 @@ const addinfo = () => {
     
   return (
     <div >
-      <form action="" className="grid lg:grid-cols-5 w-9/6 gap-5 " onSubmit={handleSubmit} >
+      <form action="" className="grid lg:grid-cols-3 w-9/6 gap-5 ml-10  " onSubmit={handleSubmit} >
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
                 <input  onChange={setFormData} name='name' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
@@ -33,18 +33,18 @@ const addinfo = () => {
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    Số phiếu
+                    Số phiếu bảo hành
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input  onChange={setFormData} name='ngaynhan' type="date" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input  onChange={setFormData} name='khachahng' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    Ngày nhận
+                    Khách hàng
                 </span>
             </label>
         </div>
@@ -81,74 +81,66 @@ const addinfo = () => {
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username"  className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='model' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input onChange={setFormData} name='diachi' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    Model 
+                    Địa chỉ
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='tinhtrang' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input onChange={setFormData} name='sanpham' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    Tình Trạng
+                    Sản phẩm
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='sncu' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input onChange={setFormData} name='serialnumber' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    SN Cũ
+                    Serial Number
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='snmoi' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input onChange={setFormData} name='loi' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder=""/>
                 <span
                     className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
-                    SN Mới 
+                    Lỗi
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='trungtambaohanh' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2" placeholder="Username"/>
+                <input onChange={setFormData} name='ghichu' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2" placeholder="Username"/>
                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
-                Trung tâm bảo hành
+                Ghi chú
                 </span>
             </label>
         </div>
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='ngaydi' type="date" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
+                <input onChange={setFormData} name='trungtambaohanh' type="date" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
                 placeholder="Username"/>
                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
-                    Ngày đi
+                    Trung tâm bão hành
                 </span>
             </label>
         </div>
-        <div className='input-type mt-4'>
-            <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
-                <input onChange={setFormData} name='ngayve' type="date" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
-                placeholder="Username"/>
-                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
-                    Ngày về
-                </span>
-            </label>
-        </div>
+        
         <div className='flex justify-start mt-1'>
         <button  className='w-1/2 flex justify-center  border-sm p-2 rounded-sm border border-current bg-indigo-600 text-white hover:bg-white  hover:text-indigo-700 hover:border-indigo-700'><span className='px-1'><TiDocumentAdd size={22}/></span></button>
         

@@ -10,7 +10,7 @@ const addbh = () => {
   return (
     
     <div>
-    <div className='mt-2 mb-2'>
+    <div className='mt-2 mb-2 ml-10'>
 
         <a
         className="group relative inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"

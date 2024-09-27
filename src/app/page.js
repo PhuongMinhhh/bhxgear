@@ -11,7 +11,7 @@ export default function Home() {
   return (
   
     
-    <div className="container  mx-auto ">
+    <div className="mx-auto ">
       <Header/>
       <div className="flex justify-between m-2">
         <Addbh/> 
