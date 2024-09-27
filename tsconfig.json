@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/mode.tsx", "src/app/database/db.ts", "src/app/lib/mongo/db.js", "src/app/lib/db.js", "db.js", "src/app/api/data-infos/route.js", "models/Info.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/mode.js", "src/app/database/db.ts", "src/app/lib/mongo/db.js", "src/app/lib/db.js", "db.js", "src/app/api/data-infos/route.js", "models/Info.js", "src/app/components/tsx.jsx", "src/app/components/schedulelist.js", "src/app/components/addbh.js", "src/app/components/form.js", "src/app/components/search.js", "src/app/components/success.js", "src/app/components/updateinfo.js", "src/app/page.js"],
   "exclude": ["node_modules"]
 }

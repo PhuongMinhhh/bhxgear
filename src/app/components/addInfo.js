@@ -1,15 +1,16 @@
 "use client"
 import React from 'react'
 import { useReducer } from 'react'
-import Success from '../components/Success'
-import { LiaSaveSolid } from "react-icons/lia";
+import Success from './success'
+import { TiDocumentAdd } from "react-icons/ti";
+
 const formReducer = (state, event) => {
     return{
         ...state,
         [event.target.name]: event.target.value  
     }
 }
-const updateInfo = () => {
+const addinfo = () => {
     const [formData, setFormData] =useReducer(formReducer,{})
     
     const handleSubmit = (e) => {
@@ -19,12 +20,12 @@ const updateInfo = () => {
        
     
     }
-    if(Object.keys(formData).length > 0) return <Success message={'Thêm thành công!'}></Success>
+    // if(Object.keys(formData).length > 0) return <Success message={'Thêm thành công!'}></Success>
    
     
   return (
     <div >
-      <form action="" className="grid lg:grid-cols-5 w-9/6 gap-5" onSubmit={handleSubmit} >
+      <form action="" className="grid lg:grid-cols-5 w-9/6 gap-5 " onSubmit={handleSubmit} >
         <div className='input-type mt-4'>
             <label htmlFor="Username" className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
                 <input  onChange={setFormData} name='name' type="text" id="Username" className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2"
@@ -149,7 +150,9 @@ const updateInfo = () => {
             </label>
         </div>
         <div className='flex justify-start mt-1'>
-        <button  className='w-1/2 flex justify-center  border-sm p-2 rounded-sm border border-current bg-indigo-600 text-white hover:bg-white  hover:text-indigo-700 hover:border-indigo-700'><span className='px-1'><LiaSaveSolid size={24}/></span></button>
+        <button  className='w-1/2 flex justify-center  border-sm p-2 rounded-sm border border-current bg-indigo-600 text-white hover:bg-white  hover:text-indigo-700 hover:border-indigo-700'><span className='px-1'><TiDocumentAdd size={22}/></span></button>
+        
+ 
         </div>
 
        
@@ -160,4 +163,4 @@ const updateInfo = () => {
   )
 }
 
-export default  updateInfo 
+export default  addinfo 
