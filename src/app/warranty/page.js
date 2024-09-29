@@ -5,7 +5,10 @@ import Search from '../components/search'
 const page = () => {
   return (
     <>
-    2w312
+    <Header/>
+    <div>
+      Trang Bảo hành
+    </div>
     </>
   )
 }

@@ -9,3 +9,13 @@ export const GET = async () => {
   // return NextResponse.json({result: "Success"})
   return NextResponse.json(empData)
 }
+
+
+export const POST = async (req) => {
+  const infoload = await req.json();
+  await mongoose.connect(connectionString)
+  const infoData = new Info(infoload)
+  const response = await infoData.save();
+  return NextResponse.json({result: response})
+
+}

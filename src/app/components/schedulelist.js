@@ -1,9 +1,12 @@
 'use client'
+import { FaSearch, FaStar } from "react-icons/fa";
+
 import React, { useEffect, useState } from 'react';
 import { MdEditNote } from "react-icons/md";
 import { FaRegTrashAlt } from "react-icons/fa";
 import Link from "next/link";
-
+import Search from "../components/search"
+import { Script } from "vm";
 
 const schedulelist=  () => {
     const [data, setData] = useState(null);
@@ -20,6 +23,8 @@ const schedulelist=  () => {
     
   return (
     <>
+    
+    
     <table className='min-w-full table-auto '>
         <thead className=''>
             <tr className='bg-indigo-600 uppercase '>
@@ -36,7 +41,7 @@ const schedulelist=  () => {
                     <span className='text-white'>  Sản phẩm  </span>
                 </th>
                 <th className='px-10 py-2'>
-                    <span className='text-white'> Action  </span>
+                    <span className='text-white'> Chi tiết  </span>
                 </th>
             </tr>
         </thead>
@@ -50,20 +55,20 @@ const schedulelist=  () => {
                 </td>
                 <td className='px-10 py-2'>
                     <span >
-                        {info.sophieu}
+                        {info.sophieubh}
                     </span>
                 </td>
                 <td className='py-2'>
-                    <span className=' bg-green-500 rounded-full px-5 p-2 text-white'>{info.loai}</span>
+                    <span className=' bg-green-500 rounded-full px-5 p-2 text-white'>{info.khachhang}</span>
                     
                 </td>
                 <td className='px-10 py-2'>
-                    <span>{info.model}</span>
+                    <span>{info.sanpham}</span>
                 </td>
             
                 <td className='px-10 py-2 justify-around gap-5'>
                     <button>
-                        <a className="group relative inline-block overflow-hidden border border-indigo-600 px-4 py-2 focus:outline-none focus:ring" href="#">
+                        <a className="group relative inline-block overflow-hidden border border-indigo-600 px-4 py-1 focus:outline-none focus:ring" href="#">
                             <span className="absolute inset-y-0 right-0 w-[2px] bg-indigo-600 transition-all group-hover:w-full group-active:bg-indigo-500"></span>
 
                             <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
@@ -83,7 +88,9 @@ const schedulelist=  () => {
              
         </tbody>
     </table>
+    
     </>
+    
 
 )}
 

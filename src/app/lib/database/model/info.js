@@ -1,15 +1,14 @@
 import mongoose from "mongoose";
 const infoModel  = new mongoose.Schema({
-        sophieu: {type: String, required: true, unique: true},   
-        ngaynghan: {type: Date},
-        loai: {type: String},
-        model: {type: String},
-        tinhtrang: {type: String},
-        sncu: {type: String},
-        snmoi: {type: String},
+        sophieubh: {type: String, required: true, unique: true},   
+        khachhang: {type: String},
+        diachi: {type:String},
+        sanpham : {type: String},
+        serialnumber: {type: String, required: true, unique: true},
         trungtambaohanh: {type: String},
-        ngaydi: {type: Date},
-        ngayve: {type: Date},
+        ghichu: {type: String},
+        loai: {type: String},
+        ngaytaophieu: {type: Date, default: Date.now()},
 
 
 });
